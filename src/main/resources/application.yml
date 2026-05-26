@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: catalog
+  cassandra:
+    contact-points: 127.0.0.1
+    port: 9042
+    local-datacenter: datacenter1
+    keyspace-name: catalog_ks
+    schema-action: create-if-not-exists
+
+springdoc:
+  swagger-ui:
+    operationsSorter: method
+  api-docs:
+    path: /v3/api-docs
